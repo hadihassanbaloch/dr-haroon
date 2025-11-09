@@ -1,0 +1,40 @@
+name: Deploy to Websouls
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        cache: 'npm'
+    
+    - name: Install and Build
+      run: |
+        npm ci
+        npm run typecheck
+        npm run lint
+        npm run build
+    
+    - name: Deploy to Websouls
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+      with:
+        server: ${{ secrets.WEBSOULS_FTP_SERVER }}
+        username: ${{ secrets.WEBSOULS_FTP_USERNAME }}
+        password: ${{ secrets.WEBSOULS_FTP_PASSWORD }}
+        local-dir: ./dist/
+        server-dir: ./public_html/
+        exclude: |
+          **/.git*
+          **/.git*/**
+          **/node_modules/**
+          **/.env*
