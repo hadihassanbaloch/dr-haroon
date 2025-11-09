@@ -41,5 +41,5 @@ jobs:
         protocol: ftps             # secure connection
         port: 21
         server-dir: /haroonsgi.com/public_html/
-        local-dir: ./build/
-       
+        local-dir: ./build
+        
