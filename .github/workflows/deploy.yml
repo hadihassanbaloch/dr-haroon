@@ -40,6 +40,6 @@ jobs:
         password: ${{ secrets.FTP_PASSWORD }}
         protocol: ftps             # secure connection
         port: 21
-        server-dir: /haroonsgi.com/public_html
+        server-dir: /haroonsgi.com/public_html/
         local-dir: ./build/
        
