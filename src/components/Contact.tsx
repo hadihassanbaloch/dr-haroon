@@ -18,7 +18,7 @@ const Contact = () => (
                 </div>
                 <div>
                   <h4 className="font-semibold text-gray-900 mb-1">Location</h4>
-                  <p className="text-gray-600">Shalamar Hospital and Medical College<br />Lahore, Pakistan</p>
+                  <p className="text-gray-600">Plot 563, Block A Faisal Town, 54000<br />Lahore, Pakistan</p>
                 </div>
               </div>
               <div className="flex items-start gap-4">
@@ -27,7 +27,7 @@ const Contact = () => (
                 </div>
                 <div>
                   <h4 className="font-semibold text-gray-900 mb-1">Phone</h4>
-                  <p className="text-gray-600">Available on request</p>
+                  <p className="text-gray-600"> 0300 4670672</p>
                 </div>
               </div>
               <div className="flex items-start gap-4">
@@ -36,7 +36,7 @@ const Contact = () => (
                 </div>
                 <div>
                   <h4 className="font-semibold text-gray-900 mb-1">Email</h4>
-                  <p className="text-gray-600">Available on request</p>
+                  <p className="text-gray-600">drharoon@gmail.com</p>
                 </div>
               </div>
             </div>

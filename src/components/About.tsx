@@ -5,7 +5,7 @@ const About = () => (
   <div className="max-w-7xl mx-auto px-4">
       <div className="text-center mb-16">
         <h2 className="text-4xl font-bold text-gray-900 mb-4">About Prof. Muhammad Haroon Yousaf</h2>
-        <p className="text-xl text-gray-600">FCPS - Professor, Head of Gastroenterology & Hepatology Department</p>
+        <p className="text-xl text-gray-600">FCPS - Professor, Head of Medicine & Gastroenterology  Department</p>
         <p className="text-lg text-blue-600 mt-2">Shalamar Institute of Health Sciences, Lahore</p>
       </div>
       <div className="grid md:grid-cols-2 gap-12 items-start">
