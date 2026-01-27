@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { X, GraduationCap, Briefcase, Award, Stethoscope, FlaskConical } from 'lucide-react';
-import drHaroonImg from '../assets/Dr.-Haroon.webp';
+import drHaroonImg from '../assets/Dr-Haroon.png';
 import drSabirImg from '../assets/dr-sabir.png';
 
 interface TeamMember {
