@@ -7,6 +7,7 @@ import {
 import Hero from './components/Hero';
 import About from './components/About';
 import Services from './components/Services';
+import Gallery from './components/Gallery';
 import Research from './components/Research';
 import Team from './components/Team';
 import Contact from './components/Contact';
@@ -18,7 +19,7 @@ function App() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['home', 'about', 'services', 'research', 'team', 'contact'];
+      const sections = ['home', 'about', 'services', 'gallery', 'research', 'team', 'contact'];
       const current = sections.find(section => {
         const element = document.getElementById(section);
         if (element) {
@@ -58,13 +59,12 @@ function App() {
 
             {/* Desktop Menu Centered */}
             <div className="hidden md:flex flex-1 justify-center items-center gap-8">
-              {['home', 'about', 'services', 'research', 'team', 'contact'].map((item) => (
+              {['home', 'about', 'services', 'gallery', 'research', 'team', 'contact'].map((item) => (
                 <button
                   key={item}
                   onClick={() => scrollToSection(item)}
-                  className={`text-lg font-medium transition-colors capitalize ${
-                    activeSection === item ? 'text-blue-600' : 'text-gray-700 hover:text-blue-600'
-                  }`}
+                  className={`text-lg font-medium transition-colors capitalize ${activeSection === item ? 'text-blue-600' : 'text-gray-700 hover:text-blue-600'
+                    }`}
                 >
                   {item}
                 </button>
@@ -95,7 +95,7 @@ function App() {
         {isMenuOpen && (
           <div className="md:hidden bg-white border-t">
             <div className="px-4 py-4 space-y-3">
-              {['home', 'about', 'services', 'research', 'team', 'contact'].map((item) => (
+              {['home', 'about', 'services', 'gallery', 'research', 'team', 'contact'].map((item) => (
                 <button
                   key={item}
                   onClick={() => scrollToSection(item)}
@@ -115,6 +115,8 @@ function App() {
       <About />
       {/* Services Section */}
       <Services />
+      {/* Gallery Section */}
+      <Gallery />
       {/* Research Section */}
       <Research />
       {/* Team Section */}

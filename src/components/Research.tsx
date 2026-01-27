@@ -2,7 +2,7 @@ import { BookOpen, Award, ChevronRight } from 'lucide-react';
 
 const Research = () => (
   <section id="research" className="py-20 bg-white">
-  <div className="max-w-7xl mx-auto px-4">
+    <div className="max-w-7xl mx-auto px-4">
       <div className="text-center mb-16">
         <h2 className="text-4xl font-bold text-gray-900 mb-4">Research & Publications</h2>
         <p className="text-xl text-gray-600">Contributing to medical advancement through extensive research</p>
@@ -52,19 +52,11 @@ const Research = () => (
           <ul className="space-y-3 text-gray-700">
             <li className="flex items-start gap-3">
               <ChevronRight className="h-5 w-5 text-blue-600 mt-1 flex-shrink-0" />
-              <span>FACS (USA) - Fellow of American College of Surgeons (2020)</span>
-            </li>
-            <li className="flex items-start gap-3">
-              <ChevronRight className="h-5 w-5 text-blue-600 mt-1 flex-shrink-0" />
-              <span>FRCS (England) - Fellowship of Royal College of Surgeons (2016)</span>
-            </li>
-            <li className="flex items-start gap-3">
-              <ChevronRight className="h-5 w-5 text-blue-600 mt-1 flex-shrink-0" />
               <span>FCPS - Fellowship of College of Physicians & Surgeons Pakistan (2012)</span>
             </li>
             <li className="flex items-start gap-3">
               <ChevronRight className="h-5 w-5 text-blue-600 mt-1 flex-shrink-0" />
-              <span>Masters in Oncoplastic Breast Surgery, University of East Anglia, UK (2020)</span>
+              <span>(MRCP) - Member of Royal College of Physicians </span>
             </li>
           </ul>
         </div>

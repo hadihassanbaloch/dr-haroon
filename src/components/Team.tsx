@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { X, GraduationCap, Briefcase, Award, Stethoscope, FlaskConical } from 'lucide-react';
 import drHaroonImg from '../assets/Dr.-Haroon.webp';
-import drSabirImg from '../assets/dr-sabir.jpeg';
+import drSabirImg from '../assets/dr-sabir.png';
 
 interface TeamMember {
   id: number;
@@ -91,7 +91,7 @@ const teamMembers: TeamMember[] = [
     id: 3,
     name: 'Miss Yumnah Haroon',
     initials: 'YH',
-    title: 'Medical Professional',
+    title: 'BSC Nutritionist and Clinical Nutritionist',
     role: 'Medical Professional',
     shortDescription: 'Dedicated to patient care excellence',
     badge: 'Team Member',
